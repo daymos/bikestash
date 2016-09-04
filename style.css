@@ -1,0 +1,9 @@
+.page-header {
+  width: 100%;
+  text-align: center;
+}
+
+h1.page-header {
+  display: inline-block;
+}
+
