@@ -23,12 +23,11 @@
       <h1 style="color:#ff9969">BikeStash <small>bike storage anywhere</small></h1>
     </div>
     <div class="container">
-      <div class="jumbotron">
-        <h2 style="margin-bottom:5px" >What is BikeStash</h2>
-          <h3 style="margin-bottom:15px; color:#ff9969">Cyclists</h3>
-          <p>BikeStash is a bike storing facility that allows you to safely park your bike in commercial spaces like cafes and shops. Find on the map the closest space to you, book, and drop off your bike.</p>
+      <div class="jumbotron" style="background-color:#ffffff; border-radius: 1">
+        <h2 style="margin-bottom:5px; color:#ff9969">What is BikeStash</h2>
+          <h3 style="margin-bottom:15px">Cyclists</h3>
+          <p>We give you a way keep your bike safe by storing it off the street. Using space in local businesses around you you can stash it exactly where you need to be for however long you need.</p>
           <br>
-          <h3 style="margin-bottom:15px; color:#ff9969">Businesses</h3>
           <p>Using any extra space you have in your property you can bring in extra revenue and build relationships with customers who cycle. You set your availability and we handle check-in and check-out to make each transaction secure and as easy as possible.</p>
           <br>
 
