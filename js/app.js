@@ -1,5 +1,5 @@
 var db = new PouchDB('todos');
-var remoteCouch = 'https://daymos.cloudant.com/landing';
+var remoteCouch = 'https://daymos:Mattia1988@daymos.cloudant.com/landing';
 
 function saveEmail(newEmail) {
   var contact = {
