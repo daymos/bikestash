@@ -1,0 +1,4 @@
+BikeStash is a bike storing facility that allows you to park your bike in commercial venues like cafes and shops. 
+Find on the map the closest venue to you, book and drop your bike.
+
+
