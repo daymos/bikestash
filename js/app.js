@@ -11,13 +11,16 @@ function saveEmail(newEmail) {
   db.put(JSON.parse(JSON.stringify(contact)), function callback(err, result) {
       if (!err) {
             console.log('Successfully saved a new contact! ', result);
+            alert('Success! We added your email')
             sync()
           }
-      else{console.log('db.put failed',err)}
+      else{
+        console.log('db.put failed',err)
+        alert('something went wrong')
+      }
     });
 }
 function sync() {
-  syncDom.setAttribute('data-sync-state', 'syncing');
   var opts = {live: true};
   db.replicate.to(remoteCouch, opts, syncError);
   db.replicate.from(remoteCouch, opts, syncError);
