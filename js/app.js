@@ -29,8 +29,8 @@ function sync() {
       });
 }
 
-document.getElementById('submit').addEventListener('click', () => {
-      saveEmail(document.getElementById('email').value)
-})
+//document.getElementById('submit').addEventListener('click', () => {
+//      saveEmail(document.getElementById('email').value)
+//})
 
 function syncError(err){console.log('syncError:', err)}
