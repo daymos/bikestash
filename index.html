@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="./assets/jquery-3.1.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -13,26 +14,34 @@
 
     <link rel="stylesheet" type="text/css" href="./style.css"/>
     <style>
-      .full-page {
-        height: 100vh;
-      }
+.full-page {
+  height: 100vh;
+}
     </style>
   </head>
 
-
-
-
-
   <body style="background-color:#ffffff">
-    <div class="page-header">
-      <h1 style="color:#ff9969">BikeStash <small>bike storage anywhere</small></h1>
-    </div>
-    <div class="container-fluid full-page" style="background-color:#ED6A5A"></div>
-    <div class="container-fluid full-page" style="background-color:#F4F1BB"></div>
-    <div class="container-fluid full-page" style="background-color:#9BC1BC"></div>
-    <div class="container-fluid full-page" style="background-color:#5CA4A9"></div>
-    <div class="container-fluid full-page" style="background-color:#E6EBE0"></div>
-    <div class="container-fluid full-page" style="background-color:#ED6A5A"></div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class="navbar-brand">BikeStash</div>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#info">about the service</a></li>
+          <li><a href="#locations">locations</a></li>
+          <li><a href="#cycle">park your bike</a></li>
+          <li><a href="#hosts">become a host</a></li>
+          <li><a href="#safetyInfo">is my bike safe?</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid full-page" style="background-color:#ED6A5A"><a name='home'></a></div>
+    <div class="container-fluid full-page" style="background-color:#F4F1BB"><a name='info'></a></div>
+    <div class="container-fluid full-page" style="background-color:#9BC1BC"><a name='locations'></a></div>
+    <div class="container-fluid full-page" style="background-color:#5CA4A9"><a name='cycle'></a></div>
+    <div class="container-fluid full-page" style="background-color:#E6EBE0"><a name='hosts'></a></div>
+    <div class="container-fluid full-page" style="background-color:#ED6A5A"><a name='safetyInfo'></a></div>
 
     <div class="container-fluid">
       <div class="container">
@@ -42,5 +51,7 @@
     <script src="https://cdn.jsdelivr.net/pouchdb/5.4.5/pouchdb.min.js"></script>
     <script src="js/base.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/app.js"></script>
+    <script src="animation.js"></script>
   </body>
 </html>
