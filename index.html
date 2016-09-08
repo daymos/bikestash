@@ -30,8 +30,30 @@
         <div id="map" class="full-page"> 
         </div>
       </div>
-      <div id="actions-from-map" class="col-sm-3" style="display: none">
-        <p>hello</p>
+      <div id="actions-from-map" class="col-sm-3" style="background-color:#ffffff">
+        <div id="search" class="simple-submission">
+        </div>
+        <div id="map-book" class="simple-submission">
+          <p>Pick a spot on the map</p>
+          <label for="host-name">Host Name</label>
+          <input type="text" class="form-control" placeholder="..." id="host-name" value="The Hackney Peddlar">
+          <label for="spaces">Spaces</label>
+          <div class="center-align">
+          <p id="spaces" style="border-bottom: thin solid black; padding-bottom: 3px">3</p>
+          <button type="button" class="btn bikestash-button">
+            Book
+          </button>
+          </div>
+        </div>
+        <div id="map-suggest" class="simple-submission">
+          <div style="height:50%"></div>
+          <p>Can't find somewhere close to where you need to park?</p>
+          <div class="center-align">
+          <button type="button" class="btn bikestash-button">
+            Suggest a spot
+          </button>
+          </div>
+        </div>
       </div>
     </div>
     <div class="container-fluid full-page" style="background-color:#5CA4A9"></div>

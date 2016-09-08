@@ -12,6 +12,27 @@ h1.page-header {
   width: 100%;
 }
 
+.bikestash-button {
+  width: 150px;
+  margin: auto;
+  background-color: #ff9969;
+  color: #ffffff;
+}
+
+.simple-submission {
+  width: 100%;
+  height: 33%;
+  text-align: left;
+}
+
+.center-align {
+  text-align: center;
+}
+
+#actions-from-map {
+  height: 100%;
+}
+
 .controls {
   margin-top: 10px;
   border: 1px solid transparent;
@@ -57,5 +78,3 @@ h1.page-header {
   width: 345px;
 }
 
-  z-index: 50;
-}
