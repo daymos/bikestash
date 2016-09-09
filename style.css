@@ -13,7 +13,7 @@ h1.page-header {
 }
 
 .bikestash-button {
-  width: 150px;
+  width: 60%;
   margin: auto;
   background-color: #ff9969;
   color: #ffffff;
@@ -27,6 +27,10 @@ h1.page-header {
 
 .center-align {
   text-align: center;
+}
+
+.brand-title {
+  color: #ff9969;
 }
 
 #actions-from-map {
@@ -44,6 +48,7 @@ h1.page-header {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
+/*
 #pac-input {
   background-color: #fff;
   font-family: Roboto;
@@ -54,10 +59,10 @@ h1.page-header {
   text-overflow: ellipsis;
   width: 300px;
 }
-
 #pac-input:focus {
   border-color: #4d90fe;
 }
+*/
 
 .pac-container {
   font-family: Roboto;
