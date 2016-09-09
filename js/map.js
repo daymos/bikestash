@@ -4,7 +4,11 @@ let map = {};
 let initialMarkers = [
   {
     title: 'The Hackney Peddlar',
-    position: {lat: 51.5547, lng: -0.0691},
+    position: {lat: 51.5407, lng: -0.0824},
+    spaces: 14,
+    freeSpaces: 8,
+    daysOpen: 'Mon-Sun',
+    openingTimes: '07:00-19:00',
   }
 ];
 
@@ -35,23 +39,44 @@ function initAutocomplete() {
   });
 
   let renderedMarkers = initialMarkers.map((location) => {
-    return new google.maps.Marker({
-      position: location.position,
-      map: map,
-      title: location.title,
-    })
+    return new google.maps.Marker(
+      Object.assign({}, location, {map: map})
+    )
   })
 
   renderedMarkers.map((marker) => {
     marker.addListener('click', () => {
+      let contentString = 
+        `<div id="content">` + 
+        `</div>` +
+        `<h1 id="firstHeading" class="panel-title" style="color:#ff9969">${marker.title}</h1>` +
+        `<div id="bodyContent">` +
+        `<h1 class="panel-title"><small>Spaces available</small></h1>` +
+        `<p>${marker.freeSpaces}</p>` +
+        `<h1 class="panel-title"><small>You can park</small></h1>` +
+        `<p class="opening-days">${marker.daysOpen}</p>` +
+        `<p class="opening-times">${marker.openingTimes}</p>` +
+        `<button type="button" class="btn bikestash-button">Book</button>` +
+        `</div>`;
+      
+      let infowindow = new google.maps.InfoWindow({
+        content: contentString
+      })
+
+      infowindow.open(map, marker);
+
+      let nameBox = document.getElementById('host-name');
+      let freeSpaces = document.getElementById('spaces');
+      nameBox.value = marker.title;
+      freeSpaces.innerHTML = marker.freeSpaces;
+
       console.log(marker.title)
     })
   })
 
-  // Create the search box and link it to the UI element.
+  // Create the search box
   var input = document.getElementById('pac-input');
   var searchBox = new google.maps.places.SearchBox(input);
-  map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
   // Bias the SearchBox results towards current map's viewport.
   map.addListener('bounds_changed', function() {
@@ -103,6 +128,12 @@ function initAutocomplete() {
       } else {
         bounds.extend(place.geometry.location);
       }
+      //Sets zoom level after search
+      google.maps.event.addListenerOnce(map, 'bounds_changed', function(event) {
+        if (this.getZoom() > 14) {
+            this.setZoom(14);
+          }
+      });
     });
     map.fitBounds(bounds);
   });
