@@ -52,19 +52,19 @@
       <div id="actions-from-map" class="col-sm-3" style="background-color:#ffffff">
         <div id="search" class="simple-submission">
           <div>
-            <h2 class="brand-title" style="border-bottom: thin solid black">BikeStash</h2>
+            <h2 class="brand-title" style="border-bottom: thin solid #90a4ae">BikeStash</h2>
           </div>
-        <input id="pac-input" class="form-control" type="text" placeholder="Search Box">
+        <input id="pac-input" class="form-control" type="text" placeholder="Search an area">
         </div>
         <div id="map-book" class="simple-submission">
           <p>Pick a spot on the map</p>
           <label for="host-name">Host Name</label>
-          <input type="text" class="form-control" placeholder="..." id="host-name">
+          <input type="text" class="form-control" placeholder="" id="host-name">
           <label for="spaces">Spaces</label>
           <div class="center-align">
-            <p id="spaces" style="border-bottom: thin solid black; padding-bottom: 3px">3</p>
+            <p id="spaces" style="border-bottom: thin solid #90a4ae; padding-bottom: 3px">3</p>
             <button type="button" class="btn bikestash-button">
-              Book
+              <a class="button-link" href="#cycle">Book</a>
             </button>
           </div>
         </div>
@@ -72,9 +72,33 @@
           <div style="height:40%"></div>
           <p>Can't find somewhere close to where you need to park?</p>
           <div class="center-align">
-            <button type="button" class="btn bikestash-button">
+            <button type="button" class="btn bikestash-button" data-toggle="modal" data-target="#suggestion-modal">
               Suggest a spot
             </button>
+            <div id="suggestion-modal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title brand-title">Suggest a Spot</h2>
+                  </div>
+                  <div class="modal-body">
+                    <label for="suggested-location">Enter a location<span class="required-field">*</span></label>
+                    <input type="text" class="form-control" placeholder="" id="host-name">
+                  <label for="suggested-location">Email Address</label>
+                  <input type="text" class="form-control" placeholder="" id="host-name">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn bikestash-button" data-dismiss="modal" style="width: 30%">
+                      Suggest this location
+                    </button>
+                    <button type="button" class="btn bikestash-button" data-dismiss="modal" style="width: 30%">
+                      Close 
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
