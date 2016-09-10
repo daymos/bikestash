@@ -65,18 +65,20 @@ function initAutocomplete() {
       let contentString = 
         `<div id="content">` + 
         `</div>` +
-          `<h1 id="firstHeading" class="panel-title" style="color:#ff9969">${marker.title}</h1>` +
+        `<h1 id="firstHeading" class="panel-title" style="color:#ff9969">${marker.title}</h1>` +
         `<div id="bodyContent">` +
-          `<h1 class="panel-title"><small>Spaces available</small></h1>` +
-          `<p>${marker.freeSpaces}</p>` +
-          `<h1 class="panel-title"><small>You can park</small></h1>` +
-          `<p class="opening-days">${marker.daysOpen}</p>` +
-          `<p class="opening-times">${marker.openingTimes}</p>` +
-          `<button type="button" class="btn bikestash-button" style="width: 100px">` + 
-            `<a class="button-link" href="#cycle">Book</a>` +
-          `</button>` +
+        `<h1 class="panel-title"><small>Spaces available</small></h1>` +
+        `<p>${marker.freeSpaces}</p>` +
+        `<h1 class="panel-title"><small>You can park</small></h1>` +
+        `<p class="opening-days">${marker.daysOpen}</p>` +
+        `<p class="opening-times">${marker.openingTimes}</p>` +
+        `<a class="button-link" href="#cycle">` +
+        `<button type="button" class="btn bikestash-button" style="width: 100px">` + 
+        `Book` +
+        `</button>` +
+        `</a>` +
         `</div>`;
-      
+
       let infowindow = new google.maps.InfoWindow({
         content: contentString
       })
@@ -149,8 +151,8 @@ function initAutocomplete() {
       //Sets zoom level after search
       google.maps.event.addListenerOnce(map, 'bounds_changed', function(event) {
         if (this.getZoom() > 14) {
-            this.setZoom(14);
-          }
+          this.setZoom(14);
+        }
       });
     });
     map.fitBounds(bounds);

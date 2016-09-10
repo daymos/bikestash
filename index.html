@@ -60,9 +60,9 @@
           <label for="spaces">Spaces</label>
           <div class="center-align">
             <p id="spaces" style="border-bottom: thin solid #90a4ae; padding-bottom: 3px">3</p>
-            <button type="button" class="btn bikestash-button">
-              <a class="button-link" href="#cycle">Book</a>
-            </button>
+            <a class="button-link" href="#cycle"><button type="button" class="btn bikestash-button">
+              Book
+            </button></a>
           </div>
         </div>
         <div id="map-suggest" class="simple-submission">
@@ -84,25 +84,36 @@
                   <label for="suggested-location">Email Address</label>
                   <input type="text" class="form-control" placeholder="" id="host-name">
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn bikestash-button" data-dismiss="modal" style="width: 30%">
-                      Suggest this location
+                  <div class="modal-footer" style="text-align: center">
+                    <button type="button" id="submit-suggestion" class="btn bikestash-button" style="width: 30%" onclick="submitSuggestion()">
+                      <span id="suggest-text">Suggest this location</span>
+                      <span id="suggestion-tick" class="glyphicon glyphicon-ok" aria-hidden="true" style="display: none"></span>
                     </button>
-                    <button type="button" class="btn bikestash-button" data-dismiss="modal" style="width: 30%">
+                    <button type="button" class="btn bikestash-button" data-dismiss="modal" style="width: 30%" onclick="resetSuggestionModal()">
                       Close 
                     </button>
                   </div>
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
     </div>
     <div class="container-fluid full-page" style="background-color:#5CA4A9"><a name='cycle'></a></div>
     <div class="container-fluid full-page" style="background-color:#E6EBE0"><a name='hosts'></a></div>
-    <div class="container-fluid full-page" style="background-color:#ED6A5A"><a name='safetyInfo'></a></div>
+    <div class="container-fluid full-page" style="background-color:#ED6A5A"><a name='safetyInfo'></a>
+      <div class="col-sm-6" style="text-align: center">
+        <div style="height: 50vh"></div>
+        <h3>Hand Selected Parking Locations</h3>
+      </div>
+      <div class="col-sm-6" style="text-align: center">
+        <div style="height: 50vh"></div>
+        <h3>Parked Bikes Covered By Insurance</h3>
+      </div>
+      <div>
+      </div>
+    </div>
 
     <div class="container-fluid">
       <div class="container">
