@@ -5,48 +5,47 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <link rel="stylesheet" type="text/css" href="./navbarStyle.css"/>
   </head>
 
 
   <body style="background-color:#ffffff" onclick="toggleScrollOnClickLocation(event)">
-    <nav class="navbar navbar-default navbar-fixed-top" style='background:transparent'>
+    <nav class="navbar navbar-default navbar-fixed-top" >
       <div class="container-fluid">
         <div class="navbar-header">
           <div class="navbar-brand" style="color:#ff9969">BikeStash</div>
         </div>
         <ul class="nav navbar-nav" >
-          <li class="active"><a href="#home" style=' margin-left:90px;'>Home</a></li>
-          <li><a href="#info" style=' margin-left:10px;'>about the service</a></li>
-          <li><a href="#locations"style=' margin-left:10px;'>locations</a></li>
-          <li><a href="#cycle"style=' margin-left:10px;'>park your bike</a></li>
-          <li><a href="#hosts" style=' margin-left:10px;'>become a host</a></li>
-          <li><a href="#safetyInfo"style=' margin-left:10px;'>is my bike safe?</a></li>
+          <li class="active"><a href="#home" style=' margin-left:90px;color:inherit;'>Home</a></li>
+          <li><a href="#info" style=' margin-left:10px;color:inherit;'>about the service</a></li>
+          <li><a href="#locations"style=' margin-left:10px;color:inherit;'>locations</a></li>
+          <li><a href="#cycle"style=' margin-left:10px;color:inherit;'>park your bike</a></li>
+          <li><a href="#hosts" style=' margin-left:10px;color:inherit;'>become a host</a></li>
+          <li><a href="#safetyInfo"style=' margin-left:10px;color:inherit;'>is my bike safe?</a></li>
         </ul>
       </div>
     </nav>
+    <script src='./initNavbar.js'></script>
     <a name='home'></a>
-    <div class="full-page" style="background-image:url('./assets/images/343587635.jpg'); background-repeat: no-repeat; background-size: cover;display:flex; align-items: center; justify-content: center;">      <div >
+    <div class="full-page" style="background-image:url('./assets/images/343587635.jpg'); background-repeat: no-repeat; background-size: cover;display:flex; align-items: center; justify-content: center;"><div >
         <div class="caption post-content" >
           <h1 style="color:white;font-size: 60px">Bikestash</h1>
           <p style="color:white;font-size: 20px">Safe bike storage anywhere in London</p> 
         </div>
       </div>
     </div>
-    <div class="full-page" style="background-color:#F4F1BB"><a name='info'></a></div>
+    <div class="full-page" style="background-color:#ffffff"><a name='info'></a></div>
     <div class="full-page" style="background-color:#9BC1BC"><a name='locations'></a>
       <div class="col-sm-9" style="padding: 0">
         <div id="map" class="full-page"> 
         </div>
       </div>
-      <div id="actions-from-map" class="col-sm-3" style="background-color:#ffffff">
+      <div id="actions-from-map" class="col-sm-3" style="background-color:#F4F1BB">
         <div id="search" class="simple-submission">
           <div>
             <h2 class="brand-title" style="border-bottom: thin solid #90a4ae">BikeStash</h2>
