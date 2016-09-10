@@ -33,6 +33,18 @@ h1.page-header {
   color: #ff9969;
 }
 
+.button-link {
+  color: #ffffff;
+}
+
+.button-link:link, .button-link:visited, .button-link:hover, .button-link:active {
+  text-decoration: none;
+}
+
+.required-field {
+  color: #ff0000;
+}
+
 #actions-from-map {
   height: 100%;
 }
