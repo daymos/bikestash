@@ -20,7 +20,7 @@ $(document).ready(function () {
 function transparentNavbar(){
   // this should attach transparent style to navbar
   document.querySelectorAll('nav')[0].style.background='transparent'
-  document.querySelectorAll('nav li').forEach((el)=>{
+  document.querySelectorAll('nav li').forEach(function(el){
     console.log(el.className)
     if(el.className.indexOf('active') === -1 ){
       console.log('im here')
@@ -35,7 +35,7 @@ function transparentNavbar(){
 function solidNavbar(){
   // this should attach transparent style to navbar
   document.querySelectorAll('nav')[0].style.background='inherit'
-  document.querySelectorAll('nav li').forEach((el)=>{
+  document.querySelectorAll('nav li').forEach(function(el){
     console.log(el.className)
     if(el.className.indexOf('active') === -1 ){
       console.log('im here')
@@ -65,4 +65,3 @@ function testScroll(ev){
 //set event listeners
 
 window.onscroll=testScroll
-document.querySelector('nav').onload = ()=>{console.log('loaded')} 
