@@ -45,6 +45,10 @@ h1.page-header {
   color: #ff0000;
 }
 
+.brief-description p {
+  padding: 15px;
+}
+
 #actions-from-map {
   height: 100%;
 }
