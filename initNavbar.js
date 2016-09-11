@@ -6,7 +6,7 @@
     if(el.className.indexOf('active') === -1 ){
       console.log('im here')
       el.style.color='white';
-      el.style.textShadow=0;
+      el.style.textShadow='0px 0px 0 black';
     }
   })
 

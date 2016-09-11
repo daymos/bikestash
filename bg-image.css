@@ -1,0 +1,18 @@
+.bg-image{
+  background-image:url('./assets/images/343587635.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-image:before{
+	content: '';
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom, black, transparent 15%);
+	opacity: .6;
+}
