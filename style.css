@@ -49,6 +49,13 @@ h1.page-header {
   padding: 15px;
 }
 
+.orange-bar {
+  background-color: #ff9969;
+  color: #ffffff;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
 #actions-from-map {
   height: 100%;
 }
