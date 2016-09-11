@@ -65,8 +65,8 @@ function initAutocomplete() {
       let contentString = 
         `<div id="content">` + 
         `</div>` +
-        `<h1 id="firstHeading" class="panel-title" style="color:#ff9969">${marker.title}</h1>` +
         `<div id="bodyContent">` +
+        `<h1 id="firstHeading" class="panel-title" style="color:#ff9969">${marker.title}</h1>` +
         `<h1 class="panel-title"><small>Spaces available</small></h1>` +
         `<p>${marker.freeSpaces}</p>` +
         `<h1 class="panel-title"><small>You can park</small></h1>` +

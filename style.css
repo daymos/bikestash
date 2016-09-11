@@ -58,6 +58,7 @@ h1.page-header {
 
 #actions-from-map {
   height: 100%;
+  padding: 0;
 }
 
 .controls {
@@ -106,3 +107,32 @@ h1.page-header {
   width: 345px;
 }
 
+@media (max-width: 992px) {
+  .about-page-spacer {
+    display: none;
+  }
+
+  .orange-bar {
+    border-top: thin solid #ffffff;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-header {
+    font-size: 100%;
+  }
+
+  .brand-title {
+    font-size: 600%;
+  }
+
+  .orange-bar {
+    font-size: 300%;
+  }
+
+  #actions-from-map {
+    display: none;
+  }
+  
+  
+}
