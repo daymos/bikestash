@@ -28,6 +28,38 @@ let initialMarkers = [
   }
 ];
 
+let mobileMap = document.getElementById('mobile-map-div');
+
+initialMarkers.map(function(marker) {
+  let row = document.createElement('div');
+  row.className = 'col-md-6';
+  row.classList.add('mobile-map-element');
+  let markerTitle = document.createElement('h3');
+  markerTitle.className = 'h3';
+  markerTitle.innerHTML = marker.title;
+  let spacesTitle = document.createElement('h4');
+  spacesTitle.className = 'h4';
+  spacesTitle.innerHTML = 'Spaces Available';
+  let spaces = document.createElement('p');
+  spaces.innerHTML = marker.freeSpaces;
+  let daysTitle = document.createElement('h4')
+  daysTitle.innerHTML = 'Days Open';
+  let days = document.createElement('p');
+  days.innerHTML = marker.daysOpen;
+  let timesTitle = document.createElement('h4');
+  timesTitle.innerHTML = 'Opening Times';
+  let times = document.createElement('p');
+  times.innerHTML = marker.openingTimes;
+  row.appendChild(markerTitle);
+  row.appendChild(spacesTitle);
+  row.appendChild(spaces);
+  row.appendChild(daysTitle);
+  row.appendChild(days);
+  row.appendChild(timesTitle);
+  row.appendChild(times);
+  mobileMap.appendChild(row);
+})
+
 function elementHasParentElement(element, id) {
   if (element.id === id) {
     return true;
@@ -158,3 +190,15 @@ function initAutocomplete() {
     map.fitBounds(bounds);
   });
 }
+
+function submitSuggestion() {
+  $('#suggest-text').css('display', 'none')
+  $('#suggestion-tick').css('display', 'inline')
+}
+
+function resetSuggestionModal() {
+  $('#suggest-text').css('display', 'inline')
+  $('#suggestion-tick').css('display', 'none')
+}
+
+

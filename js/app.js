@@ -38,12 +38,4 @@ document.getElementById('newCiclyst').addEventListener('click', function(e){
 
 function syncError(err){console.log('syncError:', err)}var db = new PouchDB('users');
 
-function submitSuggestion() {
-  $('#suggest-text').css('display', 'none')
-  $('#suggestion-tick').css('display', 'inline')
-}
 
-function resetSuggestionModal() {
-  $('#suggest-text').css('display', 'inline')
-  $('#suggestion-tick').css('display', 'none')
-}

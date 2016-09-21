@@ -107,6 +107,16 @@ h1.page-header {
   width: 345px;
 }
 
+.mobile-map {
+  display: none;
+  overflow: scroll;
+}
+
+.mobile-map-element {
+  background-color: #ffffff;
+  border: thin solid #9e9e9e;
+}
+
 @media (max-width: 992px) {
   .about-page-spacer {
     display: none;
@@ -115,9 +125,17 @@ h1.page-header {
   .orange-bar {
     border-top: thin solid #ffffff;
   }
+  
+  .desktop-map {
+    display: none;
+  }
+
+  .mobile-map {
+    display: inline;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width @screen-sm-min) {
   .about-header {
     font-size: 100%;
   }
@@ -133,6 +151,7 @@ h1.page-header {
   #actions-from-map {
     display: none;
   }
+  
   
   
 }
