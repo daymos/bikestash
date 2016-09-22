@@ -1,0 +1,85 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Calibri, Trebuchet, sans-serif;
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+.section {
+  border-bottom: 2px solid black;
+}
+
+.about-section {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.about-section p, .about-section div {
+  margin-bottom: 1.5em;
+}
+
+.h2-seperator {
+  margin-bottom: 1.5em;
+  margin-top: 0;
+  color: #9e9e9e;
+  opacity: 0.3;
+}
+
+.about-img {
+  max-width: 80%;
+  display: inline-block;
+}
+
+.bullet-img {
+  width: 100%;
+}
+
+.btn {
+  background-image: none;
+  border-radius: 3px;
+  display: table;
+  margin: 0 auto;
+}
+
+.btn:focus {
+  outline-color: #ffffff;
+}
+
+.btn-lg {
+  width: 70%;
+}
+
+.book-form-section {
+  margin-bottom: 1em;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.form-control {
+  margin-bottom: 1.5em;
+}
+
+.book-section {
+  /*background-image: url('../assets/images/144583187.jpg')*/
+}
+
+.book-title {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.form-subtext {
+  font-size: 0.8em;
+  color: #9e9e9e;
+  opacity: 0.9;
+}
+
